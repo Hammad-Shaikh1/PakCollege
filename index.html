@@ -6,17 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        var Position;
-        var Salar=70000;       
-        var Salar=50000;       
-        var Salar=30000;       
-        var Salar=25000;       
-        var Med=1000;
-        var Hou=300;
-        var Tran=500;
-        var Gross=Med+Tran+Hou;
-        var Tax=2*Gross/100
-        var Net=Gross-Tax
+        var Position;       
+        var Salar;
+        var Med;
+        var Hou;
+        var Tran;
+        var Gross;
+        var Tax=2/100
+        var Net
     </script>
 </head>
 <body>
@@ -24,21 +21,69 @@
 <script>
 var Name=prompt("Enter Name" ,"Enter Name Here")
  var Position=prompt("Enter Position" ,"Enter Position Here")
- 
+
  document.write("Name=" + Name + "<br>")
  document.write("Position=" + Position + "<br>")
-document.write("Salar="+ Salar +"<br>")
-if (Name="Manger") {
-   Salar=5000
+
+if (Position=="Manger") {
+   Salar=50000
+   Hou=800;
+   Med=500;
+   Tran=200
+   Gross=Salar+Hou+Med+Tran
+   Tax=2*Gross/100;
+   Net=Gross-Tax
+   document.write("Salar="+ Salar +"<br>")
+   document.write("Medical="+ Med +"<br>")
+   document.write("House="+ Hou +"<br>")
+   document.write("Transport="+ Tran +"<br>")
+   document.write("Tax="+ Tax +"<br>")
+   document.write("Net="+ Net +"<br>")
 }
-else if (Name="Analyst") {
+else if (Position=="Analyst") {
    Salar=70000
+   Hou=1000;
+   Med=500;
+   Tran=300
+   Tax=2*Gross/100;;
+   Gross=Salar+Hou+Med+Tran
+   Net=Gross-Tax
+   document.write("Salar="+ Salar +"<br>")
+   document.write("Medical="+ Med +"<br>")
+   document.write("House="+ Hou +"<br>")
+   document.write("Transport="+ Tran +"<br>")
+   document.write("Tax="+ Tax +"<br>")
+   document.write("Net="+ Net +"<br>")
 }
-else if (Name="Clerk") {
+else if (Position=="Clerk") {
    Salar=30000
+   Hou=500;
+   Med=300;
+   Tran=200
+   Tax=2*Gross/100;;
+   Gross=Salar+Hou+Med+Tran
+   Net=Gross-Tax
+   document.write("Salar="+ Salar +"<br>")
+   document.write("Medical="+ Med +"<br>")
+   document.write("House="+ Hou +"<br>")
+   document.write("Transport="+ Tran +"<br>")
+   document.write("Tax="+ Tax +"<br>")
+   document.write("Net="+ Net +"<br>")
 }
-else if (Name="Salesman") {
+else if (Position=="Salesman") {
    Salar=25000
+    Hou=400;
+   Med=500;
+   Tran=300
+   Tax=2*Gross/100;;
+   Gross=Salar+Hou+Med+Tran
+   Net=Gross-Tax
+   document.write("Salar="+ Salar +"<br>")
+   document.write("Medical="+ Med +"<br>")
+   document.write("House="+ Hou +"<br>")
+   document.write("Transport="+ Tran +"<br>")
+   document.write("Tax="+ Tax +"<br>")
+   document.write("Net="+ Net +"<br>")
 }
 
 else{
