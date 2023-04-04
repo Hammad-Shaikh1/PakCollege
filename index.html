@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var Position;
+        var Salar=70000;       
+        var Salar=50000;       
+        var Salar=30000;       
+        var Salar=25000;       
+        var Med=1000;
+        var Hou=300;
+        var Tran=500;
+        var Gross=Med+Tran+Hou;
+        var Tax=2*Gross/100
+        var Net=Gross-Tax
+    </script>
+</head>
+<body>
+    
+<script>
+var Name=prompt("Enter Name" ,"Enter Name Here")
+ var Position=prompt("Enter Position" ,"Enter Position Here")
+ 
+ document.write("Name=" + Name + "<br>")
+ document.write("Position=" + Position + "<br>")
+document.write("Salar="+ Salar +"<br>")
+if (Name="Manger") {
+   Salar=5000
+}
+else if (Name="Analyst") {
+   Salar=70000
+}
+else if (Name="Clerk") {
+   Salar=30000
+}
+else if (Name="Salesman") {
+   Salar=25000
+}
+
+else{
+    alert("Please Enter Valid Job Position")
+}
+
+
+</script>
+
+
+
+   
+</body>
+</html>
